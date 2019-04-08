@@ -32,7 +32,8 @@ classifier = Sequential()
 classifier.add(Conv2D( 32,(3,3), input_shape=( 64, 64, 3 ), activation = 'relu'))
 
 #when image size give replce input_shape with img_width and img_height
-classifier.add(Conv2D( 32,(3,3), input_shape=( img_width, img_height, 3 ), activation = 'relu'))
+#classifier.add(Conv2D( 32,(3,3), input_shape=( img_width, img_height, 3 ), activation = 'relu'))
+
 #32  filter (feature detector) then 64 then 128 like that , 3 * 3 fetaure detector
 #input shape - forcet to fixed image -3D ALL colored 256,256, 
 #because we useing cpu s0 64,64,3 
